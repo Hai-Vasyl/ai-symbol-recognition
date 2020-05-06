@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: radial-gradient(
+    rgba(117, 40, 133, 1),
+    rgba(117, 40, 133, 1),
+    rgba(81, 39, 163, 1)
+  );
+  min-height: 100vh;
+  font-family: "Abel", sans-serif;
+  color: lightgrey;
+  font-size: 1.18em;
+  letter-spacing: 1px;
+}
+#canvas {
+  background-color: rgba(255, 255, 255, 0.651);
+  display: block;
+  margin: 0 15px;
+  border-radius: 7px;
+}
+#block-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border: 3px solid rgba(231, 231, 231, 0.288);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3), 0px 0px 32px rgba(0, 0, 0, 0.7),
+    inset 0px 0px 12px rgba(0, 0, 0, 0.144), 0px 0px 34px rgba(117, 40, 133, 1);
+}
+.title {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.wrapper {
+  display: flex;
+}
+.btns {
+  flex: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.btns button {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.144);
+  padding: 45px 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: lightgrey;
+  border-radius: 5px;
+  outline-color: lightsalmon;
+  transition: 0.4s ease;
+  letter-spacing: 1px;
+}
+.btns button:hover {
+  letter-spacing: 5px;
+  border-color: lightgrey;
+}
+.info {
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.titleInfo {
+  padding: 15px;
+  text-align: center;
+}
+.blockI {
+  padding: 7px;
+  margin: 7px 0;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.144);
+}
+.blockI span {
+  display: block;
+}
+.mainBtns {
+  padding: 0px 15px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+
+  width: 220px;
+  padding: 25px 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: lightgrey;
+  border-radius: 5px;
+  outline-color: lightsalmon;
+  transition: 0.4s ease;
+  letter-spacing: 1px;
+}
+.btn:nth-child(1) {
+  background-color: rgba(39, 102, 58, 0.589);
+}
+.btn:nth-child(2) {
+  background-color: rgba(129, 83, 83, 0.582);
+}
+.btn:hover {
+  letter-spacing: 5px;
+  border-color: lightgrey;
+}
+.signature {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.247);
+}

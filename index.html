@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symbol Recognition</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="brain-browser.min.js"></script>
+  </head>
+  <body>
+    <div class="signature">Developed by Hai Vasyl</div>
+    <div id="block-canvas">
+      <div class="title">Symbol Recognition</div>
+      <div class="wrapper">
+        <div class="btns">
+          <button id="train">TRAIN</button>
+          <button id="clear">CLEAR</button>
+          <button id="recognize">RECOGNIZE</button>
+        </div>
+        <div>
+          <canvas id="canvas">Your browser doesnt suport canvas</canvas>
+          <div class="mainBtns">
+            <button class="btn" id="positive">POSITIVE</button>
+            <button class="btn" id="negative">NEGATIVE</button>
+          </div>
+        </div>
+        <div class="info">
+          <div class="titleInfo">Information</div>
+          <div class="blockI">Rezult: <span id="rez"></span></div>
+          <div class="blockI">Iterations: <span id="iteration"></span></div>
+          <div class="blockI">Activation: <span id="activation"></span></div>
+          <div class="blockI">Momentum: <span id="momentum"></span></div>
+          <div class="blockI">Learning Rate: <span id="lRate"></span></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
