@@ -4,37 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Symbol Recognition Hello World!</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <script src="brain-browser.min.js"></script>
   </head>
   <body>
     <div class="signature">Developed by Hai Vasyl</div>
     <div id="block-canvas">
-      <div class="title">Symbol Recognition</div>
+      <div class="title" title="Розпізнавання символу">Symbol Recognition</div>
       <div class="wrapper">
         <div class="btns">
-          <button id="train">TRAIN</button>
-          <button id="clear">CLEAR</button>
-          <button id="recognize">RECOGNIZE</button>
+          <button
+            id="train"
+            class="btnm"
+            title="1.3 Кнопка для навчання нейронної мережі"
+          >
+            ТРЕНУВАТИ
+          </button>
+          <button
+            id="clear"
+            class="btnm"
+            title="Кнопка для очищення...&#xA;1.4 символа для навчання&#xA;2.3 розпізнаного символу"
+          >
+            ОЧИСТИТИ
+          </button>
+          <button
+            class="btnm"
+            id="recognize"
+            title="2.2 Кнопка для розпізнавання намальованого символу"
+          >
+            РОЗПІЗНАТИ
+          </button>
+          <a
+            class="btnm"
+            href="ІНСТРУКЦІЯ.doc"
+            target="_blank"
+            title="Інструкція"
+            >ІНСТРУКЦІЯ</a
+          >
         </div>
         <div>
-          <canvas id="canvas">Your browser doesnt suport canvas</canvas>
+          <canvas
+            id="canvas"
+            title="Полотно для малювання символів для...&#xA;1.1 вивчення нейронної мережі&#xA;2.1 їх розпізнання"
+            >Your browser doesnt suport canvas</canvas
+          >
           <div class="mainBtns">
-            <button class="btn" id="positive">POSITIVE</button>
-            <button class="btn" id="negative">NEGATIVE</button>
+            <button
+              class="btn"
+              title="1.2 Кнопка для визначення типу намальованого символа. (Позитивний тип символа)"
+              id="positive"
+            >
+              ПОЗИТИВНИЙ
+            </button>
+            <button
+              class="btn"
+              title="1.2 Кнопка для визначення типу намальованого символа. (Негативний тип символа)"
+              id="negative"
+            >
+              НЕГАТИВНИЙ
+            </button>
           </div>
         </div>
-        <div class="info">
-          <div class="titleInfo">Information</div>
-          <div class="blockI">Rezult: <span id="rez"></span></div>
-          <div class="blockI">Iterations: <span id="iteration"></span></div>
-          <div class="blockI">Activation: <span id="activation"></span></div>
+        <div
+          class="info"
+          title="2.4 Основна інформація про розпізнання символа"
+        >
+          <div class="titleInfo">Інформація</div>
+          <div class="blockI">Результат: <span id="rez"></span></div>
+          <div class="blockI">
+            Кількість ітерацій: <span id="iteration"></span>
+          </div>
+          <div class="blockI">Активація: <span id="activation"></span></div>
           <div class="blockI">Momentum: <span id="momentum"></span></div>
-          <div class="blockI">Learning Rate: <span id="lRate"></span></div>
+          <div class="blockI">
+            Коефіцієнт навчання: <span id="lRate"></span>
+          </div>
         </div>
       </div>
     </div>

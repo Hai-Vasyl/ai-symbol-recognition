@@ -10,13 +10,15 @@ body {
     rgba(81, 39, 163, 1)
   );
   min-height: 100vh;
-  font-family: "Abel", sans-serif;
+  font-family: sans-serif;
   color: lightgrey;
-  font-size: 1.18em;
+  font-size: 1.05em;
   letter-spacing: 1px;
 }
 #canvas {
-  background-color: rgba(255, 255, 255, 0.651);
+  background-color: lightgrey;
+  box-shadow: inset 0px 0px 45px rgba(0, 0, 0, 0.486);
+  border: 5px solid white;
   display: block;
   margin: 0 15px;
   border-radius: 7px;
@@ -54,7 +56,7 @@ body {
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.07);
 }
-.btns button {
+.btns .btnm {
   font-size: inherit;
   font-family: inherit;
   background-color: transparent;
@@ -67,8 +69,11 @@ body {
   outline-color: lightsalmon;
   transition: 0.4s ease;
   letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
 }
-.btns button:hover {
+.btns .btnm:hover {
   letter-spacing: 5px;
   border-color: lightgrey;
 }
@@ -86,6 +91,8 @@ body {
   padding: 7px;
   margin: 7px 0;
   border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.301);
   background-color: rgba(0, 0, 0, 0.144);
 }
 .blockI span {
@@ -124,9 +131,9 @@ body {
 }
 .signature {
   position: absolute;
-  bottom: 3%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 4em;
-  color: rgba(0, 0, 0, 0.247);
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.678);
 }
